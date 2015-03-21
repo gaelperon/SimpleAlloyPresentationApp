@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><ti:app xmlns:ti="http://ti.appcelerator.org">
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:app xmlns:ti="http://ti.appcelerator.org">
     <property name="acs-oauth-secret-production" type="string">JenZJYciOsWMTDIzPFGBxpxvK7AvH6Yo</property>
     <property name="acs-oauth-key-production" type="string">npgpPwg7ChhP87HIjcRLPuvs2PJPBI7c</property>
     <property name="acs-api-key-production" type="string">VfQOzIXC4ycaI6RlqSpl5w87s7CXFpV1</property>
@@ -12,7 +13,7 @@
         <target device="android">true</target>
         <target device="blackberry">false</target>
     </deployment-targets>
-    <sdk-version>2.1.1.GA</sdk-version>
+    <sdk-version>3.3.0.GA</sdk-version>
     <id>ci.baseproject</id>
     <name>baseproject</name>
     <version>1.0</version>
@@ -52,8 +53,9 @@
     </mobileweb>
     <modules>
         <module platform="commonjs" version="2.3.0">ti.cloud</module>
-    <module platform="android" version="1.0">ti.physicalSizeCategory</module>
-</modules>
-<plugins><plugin version="1.0">ti.alloy</plugin>
-</plugins>
+        <module platform="android" version="1.0">ti.physicalSizeCategory</module>
+    </modules>
+    <plugins>
+        <plugin version="1.0">ti.alloy</plugin>
+    </plugins>
 </ti:app>
